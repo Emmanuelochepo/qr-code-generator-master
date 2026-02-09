@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>QR code</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./resources/Logo.svg" alt="" />
+      </div>
+      <div class="qr-container">
+        <div class="qr-input">
+          <input type="text" placeholder="Enter a Url.." id="qr-input" />
+          <button id="get-qr" onclick="generateQR()">QR code</button>
+        </div>
+      </div>
+      <div class="preview">
+        <div id="qr-preview"></div>
+      </div>
+      <footer class="author-info">
+        Coded by<a href="#">Ochepo Emmanuel</a> | Challenge by
+        <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+          >devChallenges.io</a
+        >
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
