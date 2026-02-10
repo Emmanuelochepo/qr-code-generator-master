@@ -27,8 +27,16 @@
           <button id="get-qr" onclick="generateQR()">QR code</button>
         </div>
       </div>
-      <div class="preview">
+      <div id="preview">
         <div id="qr-preview"></div>
+      </div>
+      <div id="options-btns">
+        <button id="copy" onclick="copyQrCode()">
+          <img src="./resources/link_alt.svg" alt="" />
+        </button>
+        <button id="downloadQr" onclick="downloadQrCode()">
+          <img id="download" src="./resources/Load_circle_duotone.svg" alt="" />
+        </button>
       </div>
       <footer class="author-info">
         Coded by<a href="#">Ochepo Emmanuel</a> | Challenge by

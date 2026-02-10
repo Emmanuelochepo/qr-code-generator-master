@@ -20,7 +20,7 @@
 }
 .qr-container {
   border: 1px solid #263fa9;
-  width: 40%;
+  width: 50%;
   border-radius: 10px;
   background: #030616;
 }
@@ -38,6 +38,7 @@
   outline: none;
   border: none;
   color: #f2f5f9;
+  border-radius: 10px;
 }
 #get-qr {
   border-radius: 10px;
@@ -55,11 +56,31 @@ footer {
   color: #fafaf9;
   gap: 10px;
 }
-.preview {
+#preview {
   background: #fafaf9;
   margin: 1.5rem;
   border-radius: 10px;
   padding: 1rem;
+  display: none;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#options-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  display: none;
+}
+#options-btns button {
+  background: #030616;
+  width: 5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+#options-btns img {
+  height: 36px;
+  width: 36px;
 }
 footer a {
   color: #fafaf9;
